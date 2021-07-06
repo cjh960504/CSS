@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+            border-bottom: 1px solid black;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            font-size: 100px;
+        }
+
+        #grid-wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        #lang-list{
+            padding-top: 50px;
+            padding-left: 50px;
+            margin: 0px;
+            border-right: 1px solid black;
+            height: 100%;
+            flex-basis: 100px;
+        }
+        #lang-content h4{
+            margin: 0px;
+            font-size: 50px;
+        }
+        #lang-content p{
+            font-size: 30px;
+        }
+        #lang-content{
+            flex-basis: fill;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        #wrapper{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        #right{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        #right-in{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        #right h4{
+            text-align: center;
+            /* font-size: 50px; */
+        }
+        #right-in #div1{
+            width: 100%;
+            background-color: blue;
+        }
+        #right-in #div2{
+            width: 100%;
+            background-color: red;
+        }
+        #wrapper img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">WEB</h1>
+    <div id="grid-wrapper">
+        <ol id="lang-list">
+            <li>HTMl</li>
+            <li>CSS</li>
+            <li>JAVSCRIPT</li>
+        </ol>
+        <div id="lang-content">
+            <h4>CSS</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+             It has survived not only five centuries, but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>    
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <img src="../img/glass.jpg">
+        <div id="right">
+            <h4>Title</h4>
+            <div id="right-in">
+                <div id="div1"></div>
+                <div id="div2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
