@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+            border-bottom: 1px solid black;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            font-size: 100px;
+        }
+        #flex-wrapper{
+            display: flex;
+        }
+        #lang-list{
+            border-right: 1px solid black;
+            padding-right: 30px;
+            font-weight: bold;
+        }
+        #lang-content{
+            padding-left: 30px;
+        }
+        #lang-content h4{
+            font-size: 50px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+        #wrapper{
+            display: flex;
+            border:5px solid red;
+            width: 500px;
+            
+        }
+        #wrapper img{
+            max-width: 100px;
+        }
+        #right{
+            display: flex;
+            flex-direction: column;
+        }
+        #right h4{
+            border:5px solid red;
+        }
+        #right-in{
+            display: flex;
+            width:400px;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #right-in #div1{
+            flex-basis: 20%;
+            background-color: yellow;
+            border:5px solid red;
+        }
+        #right-in #div2{
+            flex-basis: 80%;
+            background-color: blue;
+            border:5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">WEB</h1>
+    <div id="flex-wrapper">
+        <ol id="lang-list">
+            <li>HTMl</li>
+            <li>CSS</li>
+            <li>JAVSCRIPT</li>
+        </ol>
+        <div id="lang-content">
+            <h4>CSS</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+             It has survived not only five centuries, but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>    
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <img src="../img/glass.jpg">
+        <div id="right">
+            <h4>Title</h4>
+            <div id="right-in">
+                <div id="div1">g</div>
+                <div id="div2">b</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
